@@ -1,0 +1,83 @@
+:root {
+    --first-font: "Noto Sans JP", sans-serif;
+    --second-font: "Rubik Bubbles", system-ui;
+    --p1: 1rem;
+    --p2: .8rem;
+    --p3: .5rem;
+    --transition: all ease .3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--first-font);
+    padding: var(--p1);
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: var(--p1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--p1);
+}
+
+h1 {
+    font-family: var(--second-font);
+    font-size: 10rem;
+    color: #323232;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--p2);
+}
+
+button {
+    background-color: transparent;
+    padding: var(--p1);
+    font-size: 1.25rem;
+    border-radius: var(--p3);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:nth-child(1) {
+    background-color: #076007;
+}
+
+button:hover:nth-child(1) {
+    background-color: #128912;
+}
+
+button:nth-child(2) {
+    background-color: #2e2eea;
+}
+
+button:hover:nth-child(2) {
+    background-color: #1919e1;
+}
+
+button:nth-child(3) {
+    background-color: #ff5b08;
+}
+
+button:hover:nth-child(3) {
+    background-color: #d4500f;
+}
+
