@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #EAEFEF;
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  max-width: 900px;
+  padding: 1rem;
+}
+
+.main h1 {
+  font-size: 8rem;
+  text-shadow: 2px 2px 10px;
+}
+
+.main #joke {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  width: 170px;
+  border: none;
+  border-radius: .5rem;
+  font-weight: 500;
+  letter-spacing: .1rem;
+  transition: all ease .3s;
+}
+
+#generate-btn {
+  background-color: #23476e;
+  color: #fff;
+}
+
+#generate-btn:hover {
+  background-color: #377bc4;
+}
+
+#copy-btn {
+  background-color: #1a5c18;
+  color: #fff;
+}
+
+#copy-btn:hover {
+  background-color: #1a753d;
+}
+
+.popup {
+  background-color: #23476e;
+  padding: 1rem;
+  color: white;
+  border-radius: .5rem;
+  position: fixed;
+  right: -200%;
+  top: 1rem;
+  user-select: none;
+  transition: all ease .3s;
+}
+
+.popup.show {
+  right: 1rem;
+}
