@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #0d0d0d;
+}
+
+main {
+  min-height: 100vh;
+  padding: 1rem;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  place-content: center;
+  transition: all ease .3s;
+}
+
+section {
+  border-radius: .5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: .5REM;
+}
+
+.one {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: #974bdf;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.two {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.three {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #1d4881;
+  color: #fff;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+}
+
+input, 
+button {
+  padding: 1rem;
+  display: block;
+  margin-bottom: .5rem;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+input {
+  background-color: transparent;
+  border: 2px outset #fff;
+}
+
+button {
+  background-color: #051224;
+  cursor: pointer;
+  transition: all ease .3s;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #010305;
+  letter-spacing: .1rem;
+}
+
+.result {
+  font-weight: 500;
+  user-select: none;
+}
+
+.result.true {
+  color: #7dff7d;
+}
+
+.result.false {
+  color: #ff9a57;
+}
+
+@media (max-width: 720px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
