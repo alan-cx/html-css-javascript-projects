@@ -2,4 +2,4 @@
 
 ### Preview!
 
-[alt text](assets/images/preview.png)
+![alt text](assets/images/preview.png)
