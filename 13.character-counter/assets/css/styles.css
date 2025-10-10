@@ -1,0 +1,138 @@
+:root {
+  --color1: #F5F5F0;
+  --color2: #ece4db;
+  --color3: #151515;
+  --color4: #5bb50d;
+}
+
+.dark-mode {
+  --color1: #151515;
+  --color2: #232323;
+  --color3: #fff;
+  --color4: #6cd70c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Zalando Sans", sans-serif;
+  background-color: var(--color1);
+  color: var(--color3);
+  transition: all ease .2s;
+  position: relative;
+}
+
+.nav {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color2);
+  position: fixed;
+  width: 100%;
+}
+
+.set-mode-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  background-color: var(--color1);
+  color: var(--color3);
+}
+
+.set-mode-btn svg:last-child {
+  display: none;
+}
+
+.dark-mode .set-mode-btn svg:last-child {
+  display: block;
+}
+
+.dark-mode .set-mode-btn svg:first-child {
+  display: none;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 6rem 2rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+h1 span {
+  color: var(--color4);
+}
+
+textarea {
+  width: 100%;
+  display: block;
+  background-color: var(--color2);
+  border: none;
+  border-radius: 1rem;
+  resize: vertical;
+  font-family: monospace;
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--color3);
+  outline: none;
+  transition: all ease .2s;
+}
+
+textarea:focus {
+  outline: 2px solid var(--color4);
+}
+
+.info {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--color2);
+  border-radius: 1rem;
+  padding: 2rem;
+  user-select: none;
+}
+
+.card span {
+  font-size: 4rem;
+}
+
+.card-1 {
+  background-color: #d79315;
+}
+
+.card-2 {
+  background-color: #1573d7;
+}
+
+.card-3 {
+  background-color: #0e6c4e;
+}
+
+.card-4 {
+  background-color: #15d722;
+}
+
+.card-5 {
+  background-color: #d142f4;
+}
