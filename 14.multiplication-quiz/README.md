@@ -1,4 +1,4 @@
-# Multiplication QUIZ
+# Multiplication Quiz
 
 ### Preview
 
