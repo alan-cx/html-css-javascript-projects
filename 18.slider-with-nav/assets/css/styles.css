@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.slider {
+    background-color: rgb(226, 235, 238);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.item {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 7rem;
+    position: absolute;
+    width: 100%;
+    right: -600%;
+    color: white;
+    transition: all ease .5s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.active-item {
+    right: 0;
+}
+
+.item:nth-child(even) {
+    background-color: rgb(43, 168, 62);
+}
+
+.item:nth-child(odd) {
+    background-color: rgb(44, 145, 150);
+}
+
+.next, .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: lightgray;
+    color: rgb(0, 0, 0);
+}
+
+.next {
+    right: 1rem;
+}
+
+.prev {
+    left: 1rem;
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    gap: .8rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-nav a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: lightgray;
+    transition: all ease .5s;
+    text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+a.active-link {
+    background-color: white;
+    width: 50px;
+    border-radius: .5rem;
+}

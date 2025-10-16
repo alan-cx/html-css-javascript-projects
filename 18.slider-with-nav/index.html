@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple and accessible image slider built with HTML, CSS, and JavaScript. Navigate through slides using buttons, links, or keyboard arrows. Fully responsive and easy to customize.">
+    <meta name="keywords" content="slider, image slider, javascript slider, accessible carousel, responsive slider, HTML CSS JS project, web component, front-end practice">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <section class="slider" role="region" aria-label="Slider of images">
+      <div class="item" id="first" role="group" aria-label="Slider 1 of 5">1</div>
+      <div class="item" id="second" role="group" aria-label="Slider 2 of 5">2</div>
+      <div class="item" id="third" role="group" aria-label="Slider 3 of 5">3</div>
+      <div class="item" id="forth" role="group" aria-label="Slider 4 of 5">4</div>
+      <div class="item" id="fifth" role="group" aria-label="Slider 5 of 5">5</div>
+
+      <div class="buttons">
+        <button class="prev" aria-label="Previous slide button">&lt;</button>
+        <button class="next" aria-label="Next slide button">&gt;</button>
+      </div>
+
+      <nav class="slider-nav">
+        <a href="#" aria-label="Go to slide 1"><span class="visually-hidden">1</span></a>
+        <a href="#" aria-label="Go to slide 2"><span class="visually-hidden">2</span></a>
+        <a href="#" aria-label="Go to slide 3"><span class="visually-hidden">3</span></a>
+        <a href="#" aria-label="Go to slide 4"><span class="visually-hidden">4</span></a>
+        <a href="#" aria-label="Go to slide 5"><span class="visually-hidden">5</span></a>
+      </nav>
+    </section>
+    
+    <script src="./assets/js/app.js"></script>
+    </body>
+</html>
