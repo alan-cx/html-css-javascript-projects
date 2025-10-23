@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fast and easy-to-use number base converter that allows you to transform values between binary, octal, decimal, and hexadecimal systems with just one click. Perfect for students and developers.">
+    <meta name="keywords" content="number converter, base converter, binary to decimal, decimal to hexadecimal, octal to binary, hexadecimal to decimal, math tools, JavaScript converter, developer utilities">
+    <title>Number System Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+  <body>
+    <main class="main">
+      <h1>Number System <span>Converter</span></h1>
+      <form>
+        <div>
+          <label for="from">From: </label>
+          <select name="from" id="from">
+            <option value="decimal">Decimal</option>
+            <option value="binary">Binary</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+          </select>
+        </div>
+        <div>
+        <div>
+          <label for="number">Number: </label>
+          <input type="text" placeholder="Enter a number..." name="user-number">
+        </div>
+        <div>
+          <label for="to">To: </label>
+          <select name="to" id="to">
+            <option value="binary">Binary</option>
+            <option value="octal">Octal</option>
+            <option value="decimal">Decimal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">Convert Number</button>
+        </div>
+      </form>
+      <div>
+        <h2 class="result">Result...</h2>
+      </div>
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
