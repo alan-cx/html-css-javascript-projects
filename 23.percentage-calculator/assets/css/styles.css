@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #101010;
+  color: #dbdbdb;
+  font-family: "Lexend", sans-serif;
+}
+
+.main {
+  max-width: 56.25rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+.header {
+  text-align: center;
+
+  h1 {
+    font-size: 3.5rem;
+
+    span {
+      color: #20b2aa;
+    } 
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  button {
+    padding: .8rem;
+    font-size: 1rem;
+    display: block;
+    width: 200px;
+    letter-spacing: .1rem;
+    background-color: #20b2aa;
+    border-radius: .5rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease .3s;
+  }
+
+  button:hover {
+    background-color: #09d8ce;
+  }
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    padding: .8rem;
+    background-color: transparent;
+    outline: none;
+    color: #dbdbdb;
+    font-size: 1.25rem;
+    border-radius: .5rem;
+    border: 2px solid #dbdbdb;
+    transition: all ease .3s;
+    display: block;
+    width: 9.375rem;
+  }
+
+  input::placeholder {
+    font-size: .9rem;
+  }
+
+  input:focus {
+    border-color: #20b2aa;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
