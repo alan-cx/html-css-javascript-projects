@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Unlock the power of words with our comprehensive dictionary app. Get instant access to millions of definitions, synonyms, antonyms, and example sentences. Perfect for students, writers, and language enthusiasts.">
+  <title>Dictionary App</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div>
+      <span>Dictionary</span>
+    </div>
+    <div>
+      <button class="toggle" aria-label="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 1.992a10 10 0 1 0 9.236 13.838c.341 -.82 -.476 -1.644 -1.298 -1.31a6.5 6.5 0 0 1 -6.864 -10.787l.077 -.08c.551 -.63 .113 -1.653 -.758 -1.653h-.266l-.068 -.006l-.06 -.002z"/></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-sun"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 19a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z" /><path d="M18.313 16.91l.094 .083l.7 .7a1 1 0 0 1 -1.32 1.497l-.094 -.083l-.7 -.7a1 1 0 0 1 1.218 -1.567l.102 .07z" /><path d="M7.007 16.993a1 1 0 0 1 .083 1.32l-.083 .094l-.7 .7a1 1 0 0 1 -1.497 -1.32l.083 -.094l.7 -.7a1 1 0 0 1 1.414 0z" /><path d="M4 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" /><path d="M21 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" /><path d="M6.213 4.81l.094 .083l.7 .7a1 1 0 0 1 -1.32 1.497l-.094 -.083l-.7 -.7a1 1 0 0 1 1.217 -1.567l.102 .07z" /><path d="M19.107 4.893a1 1 0 0 1 .083 1.32l-.083 .094l-.7 .7a1 1 0 0 1 -1.497 -1.32l.083 -.094l.7 -.7a1 1 0 0 1 1.414 0z" /><path d="M12 2a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z" /><path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" /></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <form class="form">
+      <input type="text" id="user-word" name="user-word" placeholder="Search that word...">
+      <button type="submit" aria-label="Search word">Search</button>
+    </form>
+
+    <section class="word-information">
+      <div>
+        <h1 class="word">life</h1>
+        <p class="pronuntiation">/laɪf/</p>
+      </div>
+      <div>
+        <audio src="https://api.dictionaryapi.dev/media/pronunciations/en/life-uk.mp3" controls></audio>
+      </div>
+    </section>
+
+    <section class="definitions">
+      <div>
+        <h2 class="type-word">Noun</h2>
+      </div>
+
+      <div>
+        <p>Meaning</p>
+        <ul class="definitions-list">
+          <li>
+            The state of organisms preceding their death, characterized by biological processes such as metabolism and reproduction and distinguishing them from inanimate objects; the state of being alive and living.
+          </li>
+          <li>
+            The animating principle or force that keeps an inorganic thing or concept metaphorically alive (dynamic, relevant, etc) and makes it a "living document", "living constitution", etc.
+          </li>
+          <li>
+            It's life, but not as we know it.   She discovered plant life on the planet.   The rover discovered signs of life on the alien world.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="examples">
+      <div>
+        <p>Examples</p>
+      </div>
+      <ul class="examples-list">
+        <li>Having experienced both, the vampire decided that he preferred (un)death to life.  He gave up on life.</li>
+        <li>
+          Many lives were lost during the war.   Her quick thinking saved many dogs' lives.
+        </li>
+      </ul>
+    </section>
+
+    <section class="synonyms">
+      <div>
+        <p>Synonyms: <span>existence</span></p> 
+      </div>
+    </section>
+
+    <section class="source">
+      <div>
+        <p>Source</p>
+      </div>
+      <div>
+        <a href="https://en.wiktionary.org/wiki/life" target="_blank">https://en.wiktionary.org/wiki/life</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>
+        <p>@License</p>
+      </div>
+      <div>
+        <a href="https://creativecommons.org/licenses/by-sa/3.0" aria-label="Go to see license details" target="_blank">https://creativecommons.org/licenses/by-sa/3.0</a>
+      </div>
+    </footer>
+  </main>
+
+	<script src="./assets/js/app.js"></script>
+</body>
+</html>

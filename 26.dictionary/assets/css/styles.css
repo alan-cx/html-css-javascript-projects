@@ -1,0 +1,193 @@
+:root {
+
+  --transition: all ease .3s;
+  --font: "Lexend", sans-serif; 
+  --border-radius: .8rem; 
+
+  --color1: #f9f9f9;
+  --color2: #101010;
+  --color3: #dee1e1;
+  --color4: #69eac5;
+  --color5: #206551;
+}
+
+.dark-mode {
+  --color1: #0a0a0a;
+  --color2: #f9f9f9;
+  --color3: #0e0e0e;
+  --color4: #278b6f;
+  --color5: #3aae8d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color3);
+  font-family: var(--font);
+  color: var(--color2);
+  transition: var(--transition);
+}
+
+.nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+
+  span {
+    font-size: 1.25rem;
+    letter-spacing: .1rem;
+  }
+
+  button {
+    background-color: var(--color1);
+    color: var(--color2);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-content: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  button svg {
+    transition: var(--transition);
+  }
+
+  button:hover svg {
+    rotate: 90deg;
+  }
+
+  button svg:last-child {
+    display: none;
+  }
+
+}
+
+.dark-mode button svg:first-child {
+  display: none;
+}
+
+.dark-mode button svg:last-child {
+  display: block;
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 7rem 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--color1);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+
+
+  input, 
+  button {
+    font-family: var(--font);
+    padding: 1rem;
+    font-size: 1.25rem;
+    border: none;
+    background-color: transparent;
+    color: var(--color2);
+  }
+
+  input {
+    width: 100%;
+    outline: none;
+  }
+
+  button {
+    background-color: var(--color4);
+    transition: var(--transition);
+    cursor: pointer;
+  }
+
+  button:hover {
+    letter-spacing: .2rem;
+  }
+}
+
+.word-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+}
+
+.definitions,
+.examples,
+.synonyms,
+.source,
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+  }
+
+  p span {
+    font-weight: normal;
+    color: var(--color2);
+  }
+
+  ul {
+    padding-left: 1.5rem;
+  }
+
+  li::marker {
+    color: #2d6c5a;
+  }
+
+  li, a {
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+  }
+
+  a {
+    color: var(--color5);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
