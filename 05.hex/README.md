@@ -1,4 +1,4 @@
-# Hexadecimal Random Generator
+# Hexadecimal Color Generator
 
 ### Preview
 
