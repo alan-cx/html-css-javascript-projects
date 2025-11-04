@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An interactive web counter featuring a clean UI built with HTML and CSS. It uses vanilla JavaScript to increment, decrement, and reset the count, showcasing fundamental JS concepts.">
-    <meta name="keywords" content="Html Css JavaScript Counter Project Portfolio Front-end">
-    <title>Counter</title>
-    <link rel="shortcut icon" href="./assets/images/click.svg" type="image/x-svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="shortcut icon" href="./images/click.svg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="An interactive web counter featuring a clean UI built with HTML and CSS. It uses vanilla JavaScript to increment, decrement, and reset the count, showcasing fundamental JS concepts.">
+  <meta name="keywords" content="Html Css JavaScript Counter Project Portfolio Front-end">
+  <title>Counter</title>
+  <link rel="shortcut icon" href="./assets/images/click.svg" type="image/x-svg">
+  <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
-    <section class="container">
-        <div>
-            <h1 class="show" aria-label="Show counter value">0</h1>
-        </div>
-        <div class="buttons">
-            <button class="increment" aria-label="Increment counter button">Increment</button>
-            <button class="reset" aria-label="Reset counter button">Reset</button>
-            <button class="decrement" aria-label="Decrement counter button">Decrement</button>
-        </div>
-    </section>
-    <script src="./assets/js/index.js"></script>
+  <section class="container">
+    <div>
+      <h1 class="show" aria-label="Show counter value">0</h1>
+    </div>
+    <div class="buttons">
+      <button class="increment" aria-label="Increment counter button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-plus-icon lucide-circle-plus"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+      </button>
+      <button class="reset" aria-label="Reset counter button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-ccw-icon lucide-rotate-ccw"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+      </button>
+      <button class="decrement" aria-label="Decrement counter button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-minus-icon lucide-circle-minus"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
+      </button>
+    </div>
+  </section>
+  <script src="./assets/js/index.js"></script>
 </body>
+
 </html>
