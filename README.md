@@ -43,6 +43,7 @@ The main objective of this repository is to provide practical and functional exa
 | Dark Mode Toggle | [View Demo](https://alan-cx.github.io/html-css-javascript-projects/24.dark-mode/) |
 | Expanding Cards | [View Demo](https://alan-cx.github.io/html-css-javascript-projects/25.expanding-cards/) |
 | Dictionary | [View Demo](https://alan-cx.github.io/html-css-javascript-projects/26.dictionary/) |
+| Text Converter | [View Demo] (https://alan-cx.github.io/html-css-javascript-projects/27.text-converter/) |
 
 ## 💻 Technologies Used
 
