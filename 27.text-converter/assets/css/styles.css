@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stack+Sans+Notch:wght@200..700&display=swap');
+
+:root {
+  --main-font: "Stack Sans Notch", sans-serif;;
+  --secondary-font: "Poppins", sans-serif;
+  --border-radius: 1rem;
+  --transition: all ease .3s;
+  --color1: #F9F8F6;
+  --color2: #EFE9E3;
+  --color3: #000;
+  --color4: #8E3200;
+  --color5: #c54b09;
+} 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color1);
+}
+
+body, 
+main {
+  min-height: 100vh;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--border-radius);
+
+  div {
+    width: 100%;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: var(--main-font);
+}
+
+textarea {
+  font-family: var(--secondary-font);
+  display: block;
+  width: 100%;
+  padding: var(--border-radius);
+  font-size: var(--border-radius);
+  border-radius: var(--border-radius);
+  border: none;
+  outline: none;
+  background-color: var(--color2);
+  resize: vertical;
+  transition: var(--transition);
+  color: var(--color3);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: var(--border-radius);
+  justify-content: center;
+  flex-wrap: wrap;
+
+
+  button {
+    font-family: var(--main-font);
+    background-color: var(--color4);
+    color: var(--color1);
+    padding: var(--border-radius);
+    font-size: var(--border-radius);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;  
+    width: 150px;
+    display: block;
+    transition: var(--transition);
+  }  
+}
+
+button:hover {
+  background-color: var(--color5);
+  letter-spacing: .2rem;
+}
+
+.show-content {
+  font-family: var(--secondary-font);
+  background-color: var(--color2);
+  padding: var(--border-radius);
+  border-radius: var(--border-radius);
+  text-align: start;
+}
