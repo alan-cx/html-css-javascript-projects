@@ -1,19 +1,20 @@
-const form = document.querySelector('form')
-const btnSubmit = document.querySelector('button')
+const formElement = document.querySelector('form')
+const btnElement = document.querySelector('.submit')
 
-const getData = (e) => {
-    e.preventDefault()
-    const formEl = e.currentTarget
-    const formData = new FormData(formEl)
-    
-    const bill = Number(formData.get('bill'))
-    const perc = Number(formData.get('percen')) / 100
+function calculateBill(e) {
 
-    const tip = bill * perc
-    const totalBill = bill + tip
-    document.querySelector('.total').innerText = `$${ totalBill }`
+  e.preventDefault()
 
-    formEl.reset()
+  const formData = new FormData(e.currentTarget)
+
+  const bill = Number(formData.get('user-bill'))
+  const percentage = Number(formData.get('user-percentage')) / 100
+
+  const tip = bill * percentage
+  const total = bill + tip
+
+  document.querySelector('.total').innerText = `${total}`
+
 }
 
-form.addEventListener('submit', getData)
+formElement.addEventListener('submit', calculateBill)

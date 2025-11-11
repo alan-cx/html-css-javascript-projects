@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tip Calculator</title>
-        <link rel="shortcut icon" href="./assets/images/tip.png" type="image/x-png">
-        <link rel="stylesheet" href="./assets/css/styles.css">
-        <meta name="description" content="Don't do the math yourself! Our free online Tip Calculator quickly and accurately calculates your tip and total bill amount. Perfect for restaurants, cafes, and bars.">
-        <meta name="keywords" content="html, css, javaScript, SEO, tip calculator, calculate tip, tipping calculator, online tip calculator, how to calculate tip">
-    </head>
-    <body>
-        <main class="main">
-            <div>
-                <h1>Tip calculator</h1>
-            </div>
-            <form>
-                <label for="bill"> Amount Bill
-                    <input 
-                        type="number"
-                        id="bill"
-                        name="bill"
-                    >
-                </label>
-                <label for="percen"> Percentage
-                    <input 
-                        type="number"
-                        id="percen"
-                        name="percen"
-                    >
-                </label>
-                <button>Calculate Tip</button>
-            </form>
-            <div>
-                <p>Total => <strong class="total"></strong></p>
-            </div>
-        </main>
 
-        <script src="./assets/js/index.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="shortcut icon" href="./assets/images/tip.png" type="image/x-png">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <meta name="description"
+    content="Don't do the math yourself! Our free online Tip Calculator quickly and accurately calculates your tip and total bill amount. Perfect for restaurants, cafes, and bars.">
+  <meta name="keywords"
+    content="html, css, javaScript, SEO, tip calculator, calculate tip, tipping calculator, online tip calculator, how to calculate tip">
+</head>
+
+<body>
+  <main class="main">
+    <form>
+      <div>
+        <h1>Tip Calculator</h1>
+      </div>
+      <div>
+        <label for="user-bill">Bill Amount ($)</label>
+        <input type="number" name="user-bill" id="user-bill" required>
+      </div>
+
+      <div>
+        <label for="user-percentage">Tip Percentage (%)</label>
+        <input type="number" name="user-percentage" id="user-percentage">
+      </div>
+
+      <div class="buttons">
+        <button type="submit" class="submit">Calculate</button>
+        <button type="reset">Reset</button>
+      </div>
+
+      <div>
+        <p>Total Bill: $<span class="total">0</span></p>
+      </div>
+    </form>
+  </main>
+
+  <script src="./assets/js/index.js"></script>
+</body>
+
 </html>
