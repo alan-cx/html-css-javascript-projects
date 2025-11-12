@@ -1,4 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap');
+
+:root {
+
+  --heading-font: "Stack Sans Notch", sans-serif;
+  --text-font: "Stack Sans Text", sans-serif;
+
+  --biggest-space: 2rem;
+  --normal-space: 1rem;
+  --smallest-space: .8rem;
+
+  --transition: all ease .3s;
+
+  --color1: #010a14;
+  --color2: #fff;
+  --color3: #2791bb;
+
+  --border: 3px outset #bbb5b5;
+
+}
 
 * {
   margin: 0;
@@ -7,58 +26,67 @@
 }
 
 body {
-  background-color: #dcdcdc;
-  color: #163B5A;
-  font-family: "Roboto", sans-serif;
+  background-color: var(--color1);
+  color: var(--color2);
+  font-family: var(--text-font);
 }
 
-.main {
-  padding: 1rem;
+main {
+  max-width: 45rem;
+  margin: 0 auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto;
+  gap: var(--normal-space);
+  padding: var(--normal-space);
 
   h1 {
-    font-size: 3.5rem;
-  }
-
-  p {
-    line-height: 1.5rem;
-    font-size: 1.2rem;
+    font-family: var(--heading-font);
+    font-size: 4rem;
+    text-align: center;
   }
 }
 
-.wrapper {
-  input {
-    padding: 1rem;
-    font-size: 1.25rem;
-    display: block;
-    outline: none;
-    border: none;
-    border-radius: .5rem;
-  }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--normal-space);
 
-  input[type=number]::-webkit-inner-spin-button, 
-  input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+  .inputs-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--normal-space);
+    flex-wrap: wrap;
 
-  input[type=number] {
-    -moz-appearance: textfield;
+    input {
+      width: 300px;
+    }
   }
 
   label {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
-  div {
-    margin:0 0 1rem;
+  input {
+    display: block;
+    padding: var(--normal-space);
+    font-family: var(--text-font);
+    font-size: var(--normal-space);
+    transition: var(--transition);
+    background-color: transparent;
+    border: var(--border);
+    border-radius: var(--smallest-space);
+    outline: none;
+    color: var(--color2);
   }
+
+}
+
+input:focus {
+  border-color: var(--color3);
 }
