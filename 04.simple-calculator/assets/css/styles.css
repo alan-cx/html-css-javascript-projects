@@ -1,74 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font: "Roboto", sans-serif;
+
+  --color1: #ffffff;
+  --color2: #c1cbd3;
+  --color3: #313647;
+  --color4: #435663;
+  --color5: #eceff0;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Winky Rough", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: rgb(184, 199, 203);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .calculator {
-    background-color: white;
-    padding: 1rem;
-    width: 350px;
-    border-radius: .5rem;
+  background-color: var(--color2);
+  padding: 1.5rem;
+  max-width: 21.875rem;
+  border-radius: .5rem;
 }
 
 .show {
-    background-color: #d2dee2;
-    margin-bottom: .5rem;
-    padding: 1rem;
-    text-align: end;
-    border-radius: .5rem;
+  background-color: var(--color1);
+  margin-bottom: .5rem;
+  padding: 1rem;
+  text-align: end;
+  border-radius: .5rem;
 }
 
-.prev, .current {
-    display: flex;
-    align-items: center;
-    justify-content: end;
+.prev,
+.current {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 .current {
-    font-size: 3rem;
-    height: 60px;
+  font-size: 3rem;
+  height: 3.75rem;
 }
 
 .prev {
-    height: 25px;
+  height: 1.5625rem;
 }
 
 .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: .5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: .5rem;
 }
 
 button {
-    font-family: "Winky Rough", sans-serif;
-    padding: 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    background-color: #d2dee2;
-    border: none;
-    border-radius: .5rem;
-    font-size: 1.5rem;
+  font-family: var(--font);
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--color1);
+  color: var(--color3);
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.5rem;
 }
 
 button:hover {
-    background-color: #b3bbbd;
+  background-color: var(--color5);
 }
 
 .sky {
-    background-color: #b4edff;
+  background-color: var(--color3);
+  color: var(--color1);
 }
 
 .sky:hover {
-    background-color: #6dc2db;
+  background-color: var(--color4);
 }

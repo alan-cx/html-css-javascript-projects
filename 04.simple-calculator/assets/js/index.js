@@ -6,22 +6,22 @@ const clearAllBtn = document.querySelector('.clearAll')
 const clearLastItemBtn = document.querySelector('.clearLast')
 
 btns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        currentOperation.innerText += e.target.value
-    })
+  btn.addEventListener('click', (e) => {
+    currentOperation.innerText += e.target.value
+  })
 })
 
 function clearLastItem() {
-    currentOperation.innerText = `${currentOperation.innerText.slice(0, -1)}`
+  currentOperation.innerText = `${currentOperation.innerText.slice(0, -1)}`
 }
 
 function clearAll() {
-    currentOperation.innerText = ''
+  currentOperation.innerText = ''
 }
 
 function calculate() {
-    prevOperation.innerText = `${ currentOperation.innerText } =`
-    currentOperation.innerText = `${eval(currentOperation.innerText)}`
+  prevOperation.innerText = `${currentOperation.innerText} =`
+  currentOperation.innerText = `${eval(currentOperation.innerText)}`
 }
 
 equalBtn.addEventListener('click', calculate)
